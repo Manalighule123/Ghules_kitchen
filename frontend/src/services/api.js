@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 // Priority order: VITE_API_URL > VITE_API_BASE_URL > relative /api route
 const getBaseUrl = () => {
   if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
