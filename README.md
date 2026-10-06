@@ -1,11 +1,16 @@
-<<<<<<< HEAD
-# Ghules_kitchen
-=======
 # GHULE’S KITCHEN 🍳
 ### AI-Powered Homemade Food Marketplace & Smart Kitchen Capacity Management Platform
 
 > **"Homemade Food. Smarter Capacity. More Opportunities."**  
 > *Helping a small homemade-food business increase its order capacity without immediately taking on expensive full-time staff.*
+
+---
+
+## 📞 Official Contact & WhatsApp Support
+
+- **WhatsApp Connect**: [+91 9767781142](https://wa.me/919767781142?text=Hello%20Ghule's%20Kitchen,%20I%20would%20like%20to%20connect!)
+- **Phone / Support**: `+91 9767781142`
+- **Location**: Thergaon / Wakad, Pune, Maharashtra, India
 
 ---
 
@@ -112,4 +117,4 @@ python -m pytest
 
 ## 📄 License & Startup Attribution
 Developed for **Ghule’s Kitchen** by **Manali & Dipali Ghule**. All rights reserved.
->>>>>>> 83e6b8a (Initial commit: Ghule's Kitchen AI-powered homemade food marketplace and smart kitchen capacity platform)
+For inquiries, contact **+91 9767781142** via WhatsApp.

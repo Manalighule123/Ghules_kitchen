@@ -15,6 +15,7 @@ __pycache__/
 frontend/node_modules/
 frontend/dist/
 frontend/build/
+frontend/.vite/
 
 # Local databases & logs
 *.db

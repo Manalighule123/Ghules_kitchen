@@ -28,6 +28,8 @@ import CookDashboard from './pages/CookDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import AIAllocationPage from './pages/AIAllocationPage';
 
+import WhatsAppWidget from './components/WhatsAppWidget';
+
 export default function App() {
   const { role } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,7 +45,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800 antialiased">
+    <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800 antialiased relative">
       <Navbar onMobileMenuToggle={() => setMobileMenuOpen(!mobileMenuOpen)} />
 
       <div className="flex-1 flex max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6 gap-6 items-start">
@@ -93,6 +95,8 @@ export default function App() {
           </Routes>
         </main>
       </div>
+
+      <WhatsAppWidget />
     </div>
   );
 }

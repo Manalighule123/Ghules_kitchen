@@ -47,7 +47,7 @@ def seed_database():
         admin_user = User(
             name="Mr. Ghule (Founder & Admin)",
             email="admin@ghuleskitchen.com",
-            phone="+919876543210",
+            phone="+919767781142",
             password_hash=hash_pw("admin123"),
             role="admin"
         )
@@ -55,7 +55,7 @@ def seed_database():
         kitchen_owner = User(
             name="Manali & Dipali Ghule",
             email="kitchen@ghuleskitchen.com",
-            phone="+919876543211",
+            phone="+919767781142",
             password_hash=hash_pw("kitchen123"),
             role="kitchen"
         )
