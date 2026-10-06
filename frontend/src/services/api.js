@@ -1,12 +1,21 @@
-import axios from 'axios';
+// Priority order: VITE_API_URL > VITE_API_BASE_URL > relative /api route
+const getBaseUrl = () => {
+  if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
+  if (import.meta.env.VITE_API_BASE_URL) return import.meta.env.VITE_API_BASE_URL;
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return '/api';
+  }
+  return 'http://localhost:8000/api';
+};
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+const API_BASE_URL = getBaseUrl();
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 12000,
 });
 
 // Interceptor to attach demo token if stored
@@ -17,6 +26,17 @@ api.interceptors.request.use((config) => {
   }
   return config;
 });
+
+// Interceptor for user-friendly error handling
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (!error.response) {
+      console.warn('Backend connection unavailable:', error.message);
+    }
+    return Promise.reject(error);
+  }
+);
 
 export const authAPI = {
   login: (email, password) => api.post('/auth/login', { email, password }),
