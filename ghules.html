@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghule's Kitchen</title>
+
+<style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff8f2; }
+    header { background: #7a3e1c; padding: 20px; display: flex; align-items: center; }
+    header img { height: 90px; border-radius: 10px; }
+    header h1 { color: white; margin-left: 20px; font-size: 34px; }
+
+    .hero { text-align: center; padding: 40px; background: #fdf3e7; }
+    .hero h2 { font-size: 30px; color: #7a3e1c; }
+    .hero p { font-size: 18px; }
+
+    .order-btn {
+        background: #7a3e1c; color: white; padding: 12px 20px;
+        border-radius: 8px; text-decoration: none; font-size: 18px;
+        display: inline-block; margin-top: 15px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 28px;
+        color: #7a3e1c;
+        font-weight: bold;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        background: white; border-radius: 12px; padding: 10px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .reviews, .gallery, .contact {
+        padding: 20px;
+    }
+
+    footer {
+        background: #7a3e1c; padding: 15px; text-align: center;
+        color: white; margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <img src="logo.jpg" alt="Ghule's Kitchen Logo">
+    <h1>Ghule's Kitchen</h1>
+</header>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h2>Homemade • Fresh • Hygienic</h2>
+    <p>By Dipali & Manali — Authentic Maharashtrian Taste</p>
+
+    <a class="order-btn"
+       href="https://wa.me/919767781142?text=Hi%20Ghule's%20Kitchen,%20I%20want%20to%20place%20an%20order">
+       📞 Order on WhatsApp
+    </a>
+</div>
+
+<!-- MENU SECTION -->
+<h2 class="section-title" id="menu">Full Menu</h2>
+
+<div class="menu-grid">
+
+    <!-- Batata Rassa -->
+    <div class="card">
+        <img src="batatarassa.png">
+        <h3>Batata Rassa</h3>
+        <p>Classic Maharashtrian potato curry.</p>
+        <strong>₹70</strong>
+    </div>
+
+    <!-- Bhagar -->
+    <div class="card">
+        <img src="bhagar.png">
+        <h3>Bhagar</h3>
+        <p>Lightly cooked vrat-friendly millet.</p>
+        <strong>₹50</strong>
+    </div>
+
+    <!-- Rice Plate -->
+    <div class="card">
+        <img src="riceplate.png">
+        <h3>Rice Plate</h3>
+        <p>Steamed rice + dal + sabji + papad.</p>
+        <strong>₹85</strong>
+    </div>
+
+    <!-- Special Thali -->
+    <div class="card">
+        <img src="thali.png">
+        <h3>Special Thali</h3>
+        <p>Seasonal vegetables, rice, roti & sweet.</p>
+        <strong>₹140</strong>
+    </div>
+
+</div>
+
+<!-- GALLERY -->
+<h2 class="section-title">Gallery</h2>
+<div class="gallery menu-grid">
+    <img class="card" src="food1.png">
+    <img class="card" src="food2.png">
+    <img class="card" src="food3.png">
+</div>
+
+<!-- REVIEWS -->
+<h2 class="section-title">Customer Reviews</h2>
+<div class="reviews">
+    <p>⭐ ⭐ ⭐ ⭐ ⭐ — "Fresh and homely taste! Loved the thali." — Sneha</p>
+    <p>⭐ ⭐ ⭐ ⭐ — "Fast delivery and great flavours." — Ravi</p>
+</div>
+
+<!-- CONTACT FORM -->
+<h2 class="section-title">Contact Us</h2>
+<div class="contact">
+    <form>
+        <label>Name:</label><br>
+        <input type="text" style="width:100%; padding:8px;"><br><br>
+
+        <label>Message:</label><br>
+        <textarea style="width:100%; padding:8px;" rows="4"></textarea><br><br>
+
+        <button class="order-btn" type="submit">Send Message</button>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2024 Ghule's Kitchen — Homemade with Love ❤️  
+</footer>
+
+</body>
+</html>
